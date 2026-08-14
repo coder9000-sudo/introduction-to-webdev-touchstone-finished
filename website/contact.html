@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="css/styles.css">
     <nav>
         <ul>
-            <li><a href="index.html" class=" button-link" aria-current="page">Home</a></li>
-            <li><a href="about.html" class=" button-link">About</a></li>
-            <li><a href="contact.html" class=" button-link">Contact</a></li>
+            <li><a href="index.html" class="button-link" aria-current="page">Home</a></li>
+            <li><a href="about.html" class="button-link">About</a></li>
+            <li><a href="contact.html" class="button-link">Contact</a></li>
             <li><a href="products.html" class="button-link">Products</a></li>
         </ul>
     </nav>
@@ -28,40 +28,55 @@
         <p>
             We are open 8AM-8PM Monday-Saturday.
         </p>
-        <form>
+        <form id="contact-form" novalidate>
             <fieldset>
                 <legend>Contact</legend>
                 <label for="firstName">
-                    First Name: <input type="text" id="firstName" name="firstName" required>
+                    First Name: <input type="text" id="firstName" name="firstName">
+                    <br>
+                    <span class="error-message" id="firstName-error"></span>
                 </label>
                 <br>
                 <label for="lastName">
-                    Last Name: <input type="text" id="lastName" name="lastName" required>
+                    Last Name: <input type="text" id="lastName" name="lastName">
+                    <br>
+                    <span class="error-message" id="lastName-error"></span>
                 </label>
                 <br>
                 <label for="email">
-                    Email: <input type="email" id="email" name="email" required>
+                    Email: <input type="email" id="email" name="email">
+
                 </label>
                 <br>
                 <label for="pickup-date">
-                    Pickup: <input type="date" id="birthday" name="birthday" required>
+                    Pickup: <input type="date" id="birthday" name="birthday">
                 </label>
                 <p>Request type:</p>
                 <label>
-                    <input type="radio" name="type" value="general question" required> general question
+                    <input type="radio" name="request-type" value="general question" class="request-type"> general
+                    question
                 </label>
                 <label>
-                    <input type="radio" name="type" value="pre order" required> pre order
+                    <input type="radio" name="request-type" value="pre order" checked="true" class="request-type"> pre
+                    order
                 </label>
                 <br>
                 <label>
                     Item details
-                    <input type="text" name="type" value="" required>
+                    <input type="text" name="item details" value="">
                 </label>
+                <br>
                 <label>
                     Allergy notes
-                    <input type="text" name="type" value="" required>
+                    <input type="text" name="allergy notes" value="">
                 </label>
+                <br>
+                <label>
+                    Question
+                    <input type="text" name="question" value="">
+                </label>
+                <br>
+                <button class="submitter" type="">Submit</button>
             </fieldset>
         </form>
     </main>
@@ -69,6 +84,8 @@
     <footer>
         &copy; 2026 North Star Bakery
     </footer>
+    <script src="js\main.js"></script>
+
 </body>
 
 </html>
