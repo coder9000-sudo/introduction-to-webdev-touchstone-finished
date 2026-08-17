@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>North Star Bakery</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <nav>
+        <ul>
+            <li><a href="index.html" class="button-link" aria-current="page">Home</a></li>
+            <li><a href="about.html" class="button-link">About</a></li>
+            <li><a href="contact.html" class="button-link">Contact</a></li>
+            <li><a href="products.html" class="button-link">Products</a></li>
+        </ul>
+    </nav>
+
+</head>
+
+<body class="container">
+    <header>
+        <h1><img src="images\bakery-logo_c.png" width="100" alt="Bakery logo"></h1>
+        <h1>Contact Us</h1>
+    </header>
+    <main>
+        <p>
+            We are open 8AM-8PM Monday-Saturday.
+        </p>
+        <form id="contact-form" novalidate>
+            <fieldset>
+                <legend>Contact</legend>
+                <label for="firstName">
+                    First Name: <input type="text" id="firstName" name="firstName">
+                    <br>
+                    <span class="error-message" id="firstName-error"></span>
+                </label>
+                <br>
+                <label for="lastName">
+                    Last Name: <input type="text" id="lastName" name="lastName">
+                    <br>
+                    <span class="error-message" id="lastName-error"></span>
+                </label>
+                <br>
+                <label for="email">
+                    Email: <input type="email" id="email" name="email">
+
+                </label>
+                <br>
+                <label for="pickup-date">
+                    Pickup: <input type="date" id="birthday" name="birthday">
+                </label>
+                <p>Request type:</p>
+                <label>
+                    <input type="radio" name="request-type" value="general question" class="request-type"> general
+                    question
+                </label>
+                <label>
+                    <input type="radio" name="request-type" value="pre order" checked="true" class="request-type"> pre
+                    order
+                </label>
+                <br>
+                <label>
+                    Item details
+                    <input type="text" name="item details" value="">
+                </label>
+                <br>
+                <label>
+                    Allergy notes
+                    <input type="text" name="allergy notes" value="">
+                </label>
+                <br>
+                <label>
+                    Question
+                    <input type="text" name="question" value="">
+                </label>
+                <br>
+                <button class="submitter" type="">Submit</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        &copy; 2026 North Star Bakery
+    </footer>
+    <script src="js\main.js"></script>
+
+</body>
+
+</html>
